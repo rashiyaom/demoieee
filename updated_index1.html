@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Your Webpage</title>
+    
+    <link rel="stylesheet" href="updated_style.css"> <!-- Link to the external CSS file -->
+    <style>
+        /* Your CSS code from the previous message goes here */
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar-heading">
+            <a href="#">
+                <img class="navbar-logo" src="IEEE_CSPITlogo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="navbar-links">
+            <a href="#">Home</a>
+            <a href="#scroll-section">About</a>
+            <a href="#events-glimpse">Events</a> <!-- Redirects to Glimpses of Our Past Events section -->
+            <a href="#">Members</a>
+            <a href="#contact-container">Contact</a> 
+        </div>
+    </nav>
+
+    <!-- Image Slider Section -->
+    <div class="image-slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="tech-jobs-in-India--3-.webp" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="techday_c0342dba19bbd26114a4.webp" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="Zz1lOWNmY2Y2NGNjYmExMWVkYjE1Zjg2MjdhZGU5MzA4MQ==.webp" alt="Slide 3">
+            </div>
+            <div class="slide">
+                <img src="careers_in_electrical_engineering.jpg" alt="Slide 3">
+            </div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const slidesContainer = document.querySelector(".slides");
+    const slides = document.querySelectorAll(".slide");
+    let currentSlide = 0;
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length; // Cycle back to the first slide
+        slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+
+    // Set the interval for auto-sliding
+    setInterval(nextSlide, 3000); // 3000ms = 3 seconds
+});
+    </script>
+
+
+<div class="scroll-section" id="scroll-section">
+    <!-- Info Container -->
+    <div class="info-container">
+        <h2 class="info-heading">Empowering Future Innovators</h2>
+        <div class="info-box">
+            At IEEE CSPIT, we aim to inspire and equip students to push the boundaries of technology and innovation. We believe that the world can become a much better place in innovations and advancement in the technological sectiors, join us for such a noble cause and join us in shaping a smarter and brighter future.
+        </div>
+    </div>
+
+    <!-- Video Container -->
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="vd.mp4" type="video/mp4">
+         
+        </video>
+    </div>
+</div>
+
+<!-- JavaScript for Scroll Animation -->
+<script>
+    document.addEventListener("scroll", function () {
+        const scrollSection = document.querySelector(".scroll-section");
+        const infoContainer = document.querySelector(".info-container");
+        const videoContainer = document.querySelector(".video-container");
+
+        const sectionTop = scrollSection.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (sectionTop < windowHeight - 100) { // Trigger animation when section is near the viewport
+            infoContainer.classList.add("visible");
+            videoContainer.classList.add("visible");
+        }
+    });
+</script>
+
+
+<div class="ieee-charusat-section" >
+    <!-- Video Container -->
+    <div class="charusat-video-container">
+        <video autoplay muted loop>
+            <source src="ieew.mp4" type="video/mp4">
+           
+        </video>
+    </div>
+
+    <!-- Info Container -->
+    <div class="charusat-info-container">
+        <h2 class="charusat-info-heading">IEEE at CSPIT</h2>
+        <div class="charusat-info-box">
+            The IEEE SB at CSPIT College is a dynamic platform for aspiring engineers to innovate, collaborate, and grow. Hosting workshops, seminars, and competitions, it fosters hands-on learning and industry connections. With active chapters like the Computer Society and Women in Engineering, IEEE CSPIT empowers students to explore cutting-edge technology and lead the future of engineering.
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript for Scroll Animation -->
+<script>
+    document.addEventListener("scroll", function () {
+        const charusatSection = document.querySelector(".ieee-charusat-section");
+        const infoContainer = document.querySelector(".charusat-info-container");
+        const videoContainer = document.querySelector(".charusat-video-container");
+
+        const sectionTop = charusatSection.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (sectionTop < windowHeight - 100) { // Trigger animation when section is near the viewport
+            infoContainer.classList.add("visible");
+            videoContainer.classList.add("visible");
+        }
+    });
+</script>
+
+<section id="events-glimpse">
+    <div class="confetti-heading">
+        Glimpses of Our Past Events
+    </div>
+
+    <!-- Slider Container -->
+    <div class="slider-container">
+        <div class="slider">
+            <!-- Event 1 -->
+            <div class="slider-box">
+                <img src="event1.jpg" alt="Event 1">
+                <div class="arrow">&#8594;</div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="slider-box">
+                <img src="event2.jpg" alt="Event 2">
+                <div class="arrow">&#8594;</div>
+            </div>
+
+            <div class="slider-box">
+                <img src="event2.jpg" alt="Event 2">
+                <div class="arrow">&#8594;</div>
+            </div>
+
+            <div class="slider-box">
+                <img src="event2.jpg" alt="Event 2">
+                <div class="arrow">&#8594;</div>
+            </div>
+
+            <div class="slider-box">
+                <img src="event2.jpg" alt="Event 2">
+                <div class="arrow">&#8594;</div>
+            </div>
+
+            <div class="slider-box">
+                <img src="event2.jpg" alt="Event 2">
+                <div class="arrow">&#8594;</div>
+            </div>
+
+            <div class="slider-box">
+                <img src="event2.jpg" alt="Event 2">
+                <div class="arrow">&#8594;</div>
+            </div>
+
+            <div class="slider-box">
+                <img src="event2.jpg" alt="Event 2">
+                <div class="arrow">&#8594;</div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="slider-box">
+                <img src="event3.jpg" alt="Event 3">
+                <div class="arrow">&#8594;</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+  const slider = document.querySelector('.slider');
+        let sliderWidth = slider.scrollWidth; // Total width of all the slider boxes
+        let containerWidth = document.querySelector('.slider-container').offsetWidth; // Width of the container
+        let currentPosition = 0; // Starting position of the slider
+
+        function moveSlider() {
+            // Update current position
+            currentPosition -= 1; // Move 1 pixel left
+            if (Math.abs(currentPosition) >= sliderWidth) {
+                currentPosition = 0; // Reset position to 0 after one full slide
+            }
+            slider.style.transform = `translateX(${currentPosition}px)`; // Apply the transform to move the slider
+            requestAnimationFrame(moveSlider); // Call the function again for the next frame
+        }
+
+        // Start the slider movement
+        moveSlider();
+</script>
+
+
+
+
+
+
+
+<section class="ieee-societies-section">
+    <div class="ieee-societies-heading" id="societiesHeading">
+        IEEE Societies
+    </div>
+</section>
+
+<section class="society-section">
+    <div class="society-container">
+        <!-- Society 1 -->
+        <div class="society-card">
+            <img src="ieeecssociety.webp" alt="Society 1 Logo" class="society-logo">
+            <div class="society-title">Computer Science Society</div>
+            <div class="society-subtitle">Innovating the Future, One Code at a Time</div>
+            <a href="computer_soc.html" class="read-more">Read More</a>
+        </div>
+
+        <!-- Society 2 -->
+        <div class="society-card">
+            <img src="wie logo.png" alt="Society 2 Logo" class="society-logo">
+            <div class="society-title">Women in Engineering</div>
+            <div class="society-subtitle">Empowering Women, Engineering the Future</div>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <!-- Society 3 -->
+        <div class="society-card">
+            <img src="ieee aps logo.jpg" alt="Society 3 Logo" class="society-logo">
+            <div class="society-title">Antenna & Propogation</div>
+            <div class="society-subtitle">Shaping Communication Through Innovation</div>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </div>
+</section>
+
+<script>
+    // JavaScript to trigger visibility after scroll
+    window.addEventListener('scroll', function() {
+        var heading = document.getElementById('societiesHeading');
+        var rect = heading.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+            heading.classList.add('visible');
+        }
+    });
+</script>
+
+
+
+
+
+
+<div class="container">
+    <strong><h1>IEEE Event Calendar</h1></strong>
+    <div class="calendar-container">
+        <div class="calendar">
+            <div class="calendar-header">
+                <button id="prevMonth">&lt;</button>
+                <h2 id="currentMonth">Month Year</h2>
+                <button id="nextMonth">&gt;</button>
+            </div>
+            <div class="calendar-body" id="calendarBody"></div>
+        </div>
+        <div class="event-details" id="eventDetails">
+            <h3>Event Details</h3>
+            <div id="eventInfo">
+                <p>Click on a highlighted date to view event details.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+const calendarBody = document.getElementById('calendarBody');
+const currentMonthElement = document.getElementById('currentMonth');
+const eventDetails = document.getElementById('eventDetails');
+const prevMonthBtn = document.getElementById('prevMonth');
+const nextMonthBtn = document.getElementById('nextMonth');
+
+let currentDate = new Date();
+
+// Updated event data for January and February 2025
+const events = {
+'2025-01-05': { 
+    title: 'National Conference', 
+    description: 'A prestigious conference with key industry leaders.', 
+    time: '10:00 AM', 
+    location: 'Grand Hall', 
+    image: 'https://via.placeholder.com/300x200.png?text=National+Conference' 
+},
+'2025-01-08': { 
+    title: 'Seminar', 
+    description: 'Informative seminar on the latest in technology.', 
+    time: '2:00 PM', 
+    location: 'Auditorium', 
+    image: 'https://via.placeholder.com/300x200.png?text=Seminar' 
+},
+'2025-01-19': { 
+    title: 'Expert Talk', 
+    description: 'Interactive session with an industry expert.', 
+    time: '4:00 PM', 
+    location: 'Room 305', 
+    image: 'https://via.placeholder.com/300x200.png?text=Expert+Talk' 
+},
+'2025-01-25': { 
+    title: 'Group Discussion', 
+    description: 'Engage in dynamic discussions with peers.', 
+    time: '5:00 PM', 
+    location: 'Conference Room B', 
+    image: 'https://via.placeholder.com/300x200.png?text=Group+Discussion' 
+},
+'2025-02-02': { 
+    title: 'Coding Hackathon', 
+    description: 'A day-long competitive programming event.', 
+    time: '9:00 AM', 
+    location: 'Tech Lab', 
+    image: 'https://via.placeholder.com/300x200.png?text=Coding+Hackathon' 
+},
+'2025-02-14': { 
+    title: 'Tech Fest', 
+    description: 'Explore exciting technology projects and innovations.', 
+    time: '11:00 AM', 
+    location: 'Expo Center', 
+    image: 'https://via.placeholder.com/300x200.png?text=Tech+Fest' 
+},
+'2025-02-22': { 
+    title: 'Leadership Workshop', 
+    description: 'Develop key leadership skills with expert mentors.', 
+    time: '3:00 PM', 
+    location: 'Main Hall', 
+    image: 'https://via.placeholder.com/300x200.png?text=Leadership+Workshop' 
+},
+'2025-02-28': { 
+    title: 'Research Paper Presentation', 
+    description: 'Showcase groundbreaking research in technology.', 
+    time: '10:00 AM', 
+    location: 'Room 101', 
+    image: 'https://via.placeholder.com/300x200.png?text=Research+Presentation' 
+},
+    '2025-02-18': { 
+    title: 'Research Paper Presentation', 
+    description: 'Showcase groundbreaking research in technology.', 
+    time: '10:00 AM', 
+    location: 'Room 101', 
+    image: 'https://via.placeholder.com/300x200.png?text=Research+Presentation' 
+},
+};
+
+function generateCalendar(year, month) {
+const firstDay = new Date(year, month, 1);
+const lastDay = new Date(year, month + 1, 0);
+const daysInMonth = lastDay.getDate();
+const startingDay = firstDay.getDay();
+
+calendarBody.innerHTML = '';
+currentMonthElement.textContent = `${firstDay.toLocaleString('default', { month: 'long' })} ${year}`;
+
+for (let i = 0; i < startingDay; i++) {
+    calendarBody.appendChild(document.createElement('div'));
+}
+
+for (let day = 1; day <= daysInMonth; day++) {
+    const dateElement = document.createElement('div');
+    dateElement.classList.add('calendar-day');
+    dateElement.textContent = day;
+
+    const currentDateString = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+    if (events[currentDateString]) {
+        dateElement.classList.add('event');
+        dateElement.addEventListener('click', () => showEventDetails(currentDateString));
+    } else {
+        dateElement.addEventListener('click', () => showNoEvent());
+    }
+
+    calendarBody.appendChild(dateElement);
+}
+}
+
+function showEventDetails(date) {
+const event = events[date];
+eventDetails.innerHTML = `
+    <h3>${event.title}</h3>
+    <p><strong>Date:</strong> ${date}</p>
+    <p><strong>Time:</strong> ${event.time}</p>
+    <p><strong>Location:</strong> ${event.location}</p>
+    <p>${event.description}</p>
+    <img src="${event.image}" alt="${event.title}" class="event-image">
+`;
+}
+
+function showNoEvent() {
+eventDetails.innerHTML = '<p>No events scheduled for this date.</p>';
+}
+
+prevMonthBtn.addEventListener('click', () => {
+currentDate.setMonth(currentDate.getMonth() - 1);
+generateCalendar(currentDate.getFullYear(), currentDate.getMonth());
+});
+
+nextMonthBtn.addEventListener('click', () => {
+currentDate.setMonth(currentDate.getMonth() + 1);
+generateCalendar(currentDate.getFullYear(), currentDate.getMonth());
+});
+
+// Initialize the calendar
+generateCalendar(currentDate.getFullYear(), currentDate.getMonth());
+</script>
+
+
+
+
+
+
+
+
+
+<section class="content-wrapper">
+    <!-- Image Section -->
+    <div class="image-container">
+        <img src="Zz1lOWNmY2Y2NGNjYmExMWVkYjE1Zjg2MjdhZGU5MzA4MQ==.webp" alt="Benefit Image">
+    </div>
+
+    <!-- Benefits Information Section -->
+    <div id="benefits">
+        <div class="section-subtitle">IEEE CSPIT SB</div>
+        <div class="section-title">Our numbers speak a lot !</div>
+        <div class="section-description">
+            We provide a variety of benefits to help you achieve your goals efficiently and effectively. Here are some of the key advantages you will enjoy.
+        </div>
+
+        <!-- Benefits Boxes -->
+        <div class="benefits-boxes">
+            <div class="benefit-box">
+                <div class="benefit-number">65</div>
+                <div class="benefit-text">Active Members</div>
+            </div>
+            <div class="benefit-box">
+                <div class="benefit-number">28</div>
+                <div class="benefit-text">Successful events</div>
+            </div>
+            <div class="benefit-box">
+                <div class="benefit-number">3</div>
+                <div class="benefit-text">Awards and recognitions </div>
+            </div>
+            <div class="benefit-box">
+                <div class="benefit-number">30</div>
+                <div class="benefit-text">Conference Publications</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ <!-- Contact Us Section -->
+ <div class="contact-container" id = contact-container>
+    <h2>Get in Touch</h2>
+    <h1>Contact Us</h1>
+    <form action="your-form-processing-endpoint" method="POST">
+        <!-- Name and Email Section -->
+        <div class="form-row">
+            <div class="form-group">
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+                <i class="fa fa-user"></i>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" required placeholder="Your Email">
+                <i class="fa fa-envelope"></i>
+            </div>
+        </div>
+
+        <!-- Message Section -->
+        <div class="form-group">
+            <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
+            <i class="fa fa-comment"></i>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Send Message</button>
+    </form>
+    
+</div>
+
+
+
+
+
+<!-- Footer Section -->
+<div class="footer">
+    <div class="footer-content">
+        <!-- About Section -->
+        <div class="about-section">
+            <h3>About Us</h3>
+            <p>The IEEE Student Branch at CSPIT is a hub for innovation and learning, empowering students to excel in engineering and technology through events, workshops, and professional networking.</p>
+        </div>
+
+        <!-- Societies Section -->
+        <div class="societies-section">
+            <h3>Our Societies</h3>
+            <ul>
+                <li>Computer Society</li>
+                <li>Women In Engineering</li>
+                <li>Antenna & Propogation</li>
+                
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h3>Contact Us</h3>
+            <p><i class="fa fa-phone"></i> 123-456-7890</p>
+            <p><i class="fa fa-envelope"></i> ieeecspit@gmail.com</p>
+        </div>
+
+        <!-- Updates Section -->
+        <div class="updates-section">
+            <h3>Stay Updated</h3 >
+            <form action="#" method="post">
+                <input type="text" placeholder="Enter your name" required>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Bottom Section -->
+<div class="footer-bottom">
+    <p>&copy; 2025 IEEE CSPIT SB. All rights reserved.</p>
+    <nav>
+        <a href="#">Designed By Om Rashiya</a>
+    
+    </nav>
+</div>
+
+<!-- Add FontAwesome for icons (if you don't have it already included) -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
